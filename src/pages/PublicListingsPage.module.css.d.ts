@@ -7,15 +7,10 @@ declare const styles: {
   readonly searchWrap: string;
   readonly searchIcon: string;
   readonly searchInput: string;
-  readonly filterSelect: string;
+  readonly select: string;
   readonly grid: string;
-  readonly emptyState: string;
-  readonly emptyText: string;
-  readonly emptySubtext: string;
-  readonly categories: string;
-  readonly catBtn: string;
-  readonly catActive: string;
-  readonly emptySub: string;
+  readonly empty: string;
+  readonly emptyIcon: string;
   readonly count: string;
 };
 export default styles;

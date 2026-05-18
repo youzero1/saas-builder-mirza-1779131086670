@@ -4,29 +4,43 @@
   gap: var(--space-8);
 }
 
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.pageSub {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+}
+
 .header {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--space-4);
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .title {
   font-size: 1.75rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-gray-900);
-  line-height: 1.2;
 }
 
 .subtitle {
   font-size: 0.9rem;
   color: var(--color-gray-500);
-  margin-top: var(--space-1);
 }
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: var(--space-4);
 }
 
@@ -58,23 +72,55 @@
   gap: 2px;
 }
 
-.statLabel {
-  font-size: 0.8rem;
-  color: var(--color-gray-500);
-  font-weight: 500;
-}
-
 .statValue {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--color-gray-900);
 }
 
-.tableWrap {
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+}
+
+.tableCard {
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-4);
+}
+
+.tableTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.tableSearch {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+  width: 220px;
+}
+
+.tableSearch:focus {
+  border-color: var(--color-primary);
+}
+
+.thead {
+  background: var(--color-gray-50);
 }
 
 .table {
@@ -86,49 +132,36 @@
   padding: var(--space-3) var(--space-5);
   text-align: left;
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-gray-400);
-  background: var(--color-gray-50);
-  border-bottom: 1px solid var(--color-border);
 }
 
-.emptyRow {
+.empty {
   padding: var(--space-10) var(--space-5);
   text-align: center;
+  color: var(--color-gray-400);
 }
 
 .emptyText {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-gray-400);
-  margin-bottom: var(--space-1);
+  margin-top: var(--space-3);
+  font-size: 0.9rem;
 }
 
-.emptySubtext {
-  font-size: 0.85rem;
-  color: var(--color-gray-400);
-}
-
-.tableFoot {
-  padding: var(--space-3) var(--space-5);
-  border-top: 1px solid var(--color-border);
-  background: var(--color-gray-50);
-  font-size: 0.82rem;
-  color: var(--color-gray-400);
-}
-
-.modalBody {
+.modal {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  padding: var(--space-2) 0;
+  gap: var(--space-4);
+}
+
+.modalText {
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
 }
 
 .modalActions {
   display: flex;
   justify-content: flex-end;
   gap: var(--space-3);
-  margin-top: var(--space-4);
 }

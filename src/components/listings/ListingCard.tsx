@@ -1,7 +1,6 @@
 import { Package, Tag, Calendar } from 'lucide-react';
 import { Listing } from '@/types';
 import { formatPrice, formatDate } from '@/lib/utils';
-import Badge from '@/components/ui/Badge';
 import styles from '@/components/listings/ListingCard.module.css';
 
 type ListingCardProps = {

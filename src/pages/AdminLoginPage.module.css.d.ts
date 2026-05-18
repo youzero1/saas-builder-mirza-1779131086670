@@ -8,13 +8,10 @@ declare const styles: {
   readonly field: string;
   readonly label: string;
   readonly input: string;
-  readonly btn: string;
-  readonly hint: string;
-  readonly top: string;
-  readonly iconWrap: string;
-  readonly title: string;
-  readonly sub: string;
-  readonly errorBanner: string;
+  readonly inputError: string;
+  readonly error: string;
+  readonly globalError: string;
   readonly passWrap: string;
+  readonly eyeBtn: string;
 };
 export default styles;

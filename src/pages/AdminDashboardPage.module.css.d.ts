@@ -1,5 +1,8 @@
 declare const styles: {
   readonly page: string;
+  readonly pageHeader: string;
+  readonly pageTitle: string;
+  readonly pageSub: string;
   readonly header: string;
   readonly title: string;
   readonly subtitle: string;
@@ -7,16 +10,19 @@ declare const styles: {
   readonly statCard: string;
   readonly statIcon: string;
   readonly statBody: string;
-  readonly statLabel: string;
   readonly statValue: string;
-  readonly tableWrap: string;
+  readonly statLabel: string;
+  readonly tableCard: string;
+  readonly tableHeader: string;
+  readonly tableTitle: string;
+  readonly tableSearch: string;
+  readonly thead: string;
   readonly table: string;
   readonly th: string;
-  readonly emptyRow: string;
+  readonly empty: string;
   readonly emptyText: string;
-  readonly emptySubtext: string;
-  readonly tableFoot: string;
-  readonly modalBody: string;
+  readonly modal: string;
+  readonly modalText: string;
   readonly modalActions: string;
 };
 export default styles;
