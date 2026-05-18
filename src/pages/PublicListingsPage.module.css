@@ -1,0 +1,123 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.hero {
+  text-align: center;
+  padding: var(--space-10) 0 var(--space-4);
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-gray-900);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.heroSub {
+  font-size: 1.1rem;
+  color: var(--color-gray-500);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.searchWrap {
+  position: relative;
+  max-width: 420px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gray-400);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: var(--space-3) var(--space-4) var(--space-3) 38px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  background: var(--color-white);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.searchInput:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.catBtn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-gray-600);
+  transition: all var(--transition-fast);
+}
+
+.catBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.catActive {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) 0;
+  gap: var(--space-3);
+}
+
+.emptyIcon {
+  color: var(--color-gray-300);
+}
+
+.emptyText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+}
+
+.emptySub {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+}
+
+.count {
+  font-size: 0.85rem;
+  color: var(--color-gray-400);
+  text-align: right;
+}

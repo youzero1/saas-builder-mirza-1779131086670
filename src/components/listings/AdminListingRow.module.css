@@ -1,0 +1,56 @@
+.row {
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--transition-fast);
+}
+
+.row:hover {
+  background: var(--color-gray-50);
+}
+
+.td {
+  padding: var(--space-4) var(--space-5);
+  vertical-align: middle;
+}
+
+.titleCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.category {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 240px;
+}
+
+.price {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.date {
+  font-size: 0.82rem;
+  color: var(--color-gray-400);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+}
