@@ -1,0 +1,23 @@
+declare const styles: {
+  readonly page: string;
+  readonly header: string;
+  readonly title: string;
+  readonly subtitle: string;
+  readonly stats: string;
+  readonly statCard: string;
+  readonly statIcon: string;
+  readonly statBody: string;
+  readonly statLabel: string;
+  readonly statValue: string;
+  readonly section: string;
+  readonly sectionHeader: string;
+  readonly sectionTitle: string;
+  readonly tableWrap: string;
+  readonly table: string;
+  readonly th: string;
+  readonly empty: string;
+  readonly emptyIcon: string;
+  readonly emptyText: string;
+  readonly emptySubtext: string;
+};
+export default styles;
