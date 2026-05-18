@@ -7,11 +7,14 @@ declare const styles: {
   readonly form: string;
   readonly field: string;
   readonly label: string;
-  readonly inputWrap: string;
   readonly input: string;
-  readonly inputError: string;
-  readonly eyeBtn: string;
-  readonly error: string;
+  readonly btn: string;
   readonly hint: string;
+  readonly top: string;
+  readonly iconWrap: string;
+  readonly title: string;
+  readonly sub: string;
+  readonly errorBanner: string;
+  readonly passWrap: string;
 };
 export default styles;

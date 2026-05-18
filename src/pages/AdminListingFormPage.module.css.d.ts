@@ -3,5 +3,6 @@ declare const styles: {
   readonly header: string;
   readonly title: string;
   readonly card: string;
+  readonly sub: string;
 };
 export default styles;
