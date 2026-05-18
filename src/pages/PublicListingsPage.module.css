@@ -6,16 +6,14 @@
 
 .hero {
   text-align: center;
-  padding: var(--space-8) var(--space-4);
-  background: linear-gradient(135deg, var(--color-primary-bg) 0%, var(--color-white) 100%);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+  padding: var(--space-8) 0 var(--space-4);
 }
 
 .heroTitle {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: var(--color-gray-900);
+  letter-spacing: -0.03em;
   margin-bottom: var(--space-2);
 }
 
@@ -26,29 +24,32 @@
 
 .controls {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
 }
 
 .searchWrap {
   position: relative;
-  display: flex;
-  align-items: center;
+  flex: 1;
+  min-width: 200px;
 }
 
 .searchIcon {
   position: absolute;
   left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--color-gray-400);
   pointer-events: none;
 }
 
 .searchInput {
   width: 100%;
-  padding: var(--space-3) var(--space-4) var(--space-3) calc(var(--space-3) * 2 + 16px);
+  padding: var(--space-2) var(--space-3) var(--space-2) calc(var(--space-3) + 28px);
   border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-md);
-  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
   color: var(--color-gray-800);
   background: var(--color-white);
   outline: none;
@@ -60,6 +61,17 @@
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
 }
 
+.sortSelect {
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+  background: var(--color-white);
+  outline: none;
+  cursor: pointer;
+}
+
 .categories {
   display: flex;
   flex-wrap: wrap;
@@ -68,13 +80,14 @@
 
 .catBtn {
   padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full, 9999px);
   border: 1.5px solid var(--color-border);
-  background: var(--color-white);
-  font-size: 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--color-gray-600);
+  background: var(--color-white);
   cursor: pointer;
-  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .catBtn:hover {
@@ -89,33 +102,44 @@
   font-weight: 600;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-4);
-}
-
 .empty {
-  text-align: center;
-  padding: var(--space-12, 3rem) var(--space-4);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-3);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
 }
 
 .emptyText {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--color-gray-600);
+  color: var(--color-gray-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--space-4);
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 .emptySub {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--color-gray-400);
 }
 
 .count {
-  font-size: 0.875rem;
-  color: var(--color-gray-500);
+  font-size: 0.85rem;
+  color: var(--color-gray-400);
+  text-align: right;
 }
